@@ -30,3 +30,4 @@ C:\Users\vijay\source\repos\FizzBuzzApp\FizzBuzzApp\bin\Debug\net8.0\Swashbuckle
 C:\Users\vijay\source\repos\FizzBuzzApp\FizzBuzzApp\obj\Debug\net8.0\FizzBuzzApp.csproj.AssemblyReference.cache
 C:\Users\vijay\source\repos\FizzBuzzApp\FizzBuzzApp\obj\Debug\net8.0\FizzBuzzApp.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\vijay\source\repos\FizzBuzzApp\FizzBuzzApp\obj\Debug\net8.0\FizzBuzz.F13480C5.Up2Date
+C:\Users\vijay\source\repos\FizzBuzzApp\FizzBuzzApp\obj\Debug\net8.0\FizzBuzzApp.sourcelink.json

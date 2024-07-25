@@ -111,3 +111,4 @@ C:\Users\vijay\source\repos\FizzBuzzApp\FizzBuzzApp.Tests\obj\Debug\net8.0\refin
 C:\Users\vijay\source\repos\FizzBuzzApp\FizzBuzzApp.Tests\obj\Debug\net8.0\FizzBuzzApp.Tests.pdb
 C:\Users\vijay\source\repos\FizzBuzzApp\FizzBuzzApp.Tests\obj\Debug\net8.0\FizzBuzzApp.Tests.genruntimeconfig.cache
 C:\Users\vijay\source\repos\FizzBuzzApp\FizzBuzzApp.Tests\obj\Debug\net8.0\ref\FizzBuzzApp.Tests.dll
+C:\Users\vijay\source\repos\FizzBuzzApp\FizzBuzzApp.Tests\obj\Debug\net8.0\FizzBuzzApp.Tests.sourcelink.json

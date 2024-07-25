@@ -2,37 +2,40 @@
 {
     public class FizzBuzzService : IFizzBuzzService
     {
+        private readonly IFizzBuzzUtilityService _fizzBuzzUtilityService;
+
+        public FizzBuzzService(IFizzBuzzUtilityService fizzBuzzUtilityService)
+        {
+            _fizzBuzzUtilityService = fizzBuzzUtilityService;
+        }
+
         public List<FizzBuzzResult> ProcessValues(string[] values)
         {
             var results = new List<FizzBuzzResult>();
+
             foreach (var value in values)
             {
-                if (int.TryParse(value, out int intValue))
+                if (int.TryParse(value, out int number))
                 {
-                    if (intValue % 3 == 0 && intValue % 5 == 0)
+                    var result = _fizzBuzzUtilityService.GetFizzBuzzResult(number);
+                    if (result != null)
                     {
-                        results.Add(new FizzBuzzResult { Input = value, Result = "FizzBuzz" });
-                    }
-                    else if (intValue % 3 == 0)
-                    {
-                        results.Add(new FizzBuzzResult { Input = value, Result = "Fizz" });
-                    }
-                    else if (intValue % 5 == 0)
-                    {
-                        results.Add(new FizzBuzzResult { Input = value, Result = "Buzz" });
+                        results.Add(new FizzBuzzResult { Input = value, Result = result });
                     }
                     else
                     {
-                        results.Add(new FizzBuzzResult { Input = value, Result = $"Divided {intValue} by 3\nDivided {intValue} by 5" });
+                        results.Add(new FizzBuzzResult { Input = value, Result = string.Join("\n", _fizzBuzzUtilityService.GetDivisionResults(number)) });
                     }
                 }
                 else
                 {
-                    results.Add(new FizzBuzzResult { Input = value, Result = "Invalid item" });
+                    results.Add(new FizzBuzzResult { Input = value, Result = FizzBuzzConstants.InvalidItem });
                 }
             }
+
             return results;
         }
     }
+
 
 }

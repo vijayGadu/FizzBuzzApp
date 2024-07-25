@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddScoped<IFizzBuzzService, FizzBuzzService>();
+builder.Services.AddScoped<IFizzBuzzUtilityService, FizzBuzzUtilityService>(); // Register the utility service
 
 // Register the Swagger generator, defining 1 or more Swagger documents
 builder.Services.AddSwaggerGen();
